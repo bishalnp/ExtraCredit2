@@ -5,22 +5,22 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Books currently in the store</title>
+<title>Artist in the Movies</title>
 </head>
 <body>
-	<h1>Books currently in the store</h1>
+	<h1>Artist in the Movies</h1>
 	<table>
-	<c:forEach var="book" items="${books}">
+	<c:forEach var="artist" items="${artists}">
 	<tr>
-		<td>${book.title}</td>
-		<td>${book.ISBN}</td>
-		<td>${book.author}</td>
-		<td>${book.price}</td>
-		<td><a href="books/${book.id}">edit</a></td>
+		<td>${artist.fullName}</td>
+		<td>${artist.DOB}</td>
+		<td>${artist.birthplace}</td>
+		<td>${artist.picture}</td>
+		<td><a href="artists/${artist.id}">edit</a></td>
 	</tr>
 	</c:forEach>
 	</table>
 	
-	<a href="addBook.html"> Add a Book</a>
+	<a href="addArtist.html"> Add a Artist</a>
 </body>
 </html>

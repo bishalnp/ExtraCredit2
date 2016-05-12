@@ -5,22 +5,23 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Books currently in the store</title>
+<title>Movies currently available</title>
 </head>
 <body>
-	<h1>Books currently in the store</h1>
+	<h1>Movies currently available</h1>
 	<table>
-	<c:forEach var="book" items="${books}">
+	<c:forEach var="movie" items="${movies}">
 	<tr>
-		<td>${book.title}</td>
-		<td>${book.ISBN}</td>
-		<td>${book.author}</td>
-		<td>${book.price}</td>
-		<td><a href="books/${book.id}">edit</a></td>
+		<td>${movie.title}</td>
+		<td>${movie.summary}</td>
+		<td>${movie.year}</td>
+		<td>${movie.rating}</td>
+		<td>${movie.genre}</td>
+		<td><a href="books/${movie.id}">edit</a></td>
 	</tr>
 	</c:forEach>
 	</table>
 	
-	<a href="addBook.html"> Add a Book</a>
+	<a href="addMovie.html"> Add a Movie</a>
 </body>
 </html>
