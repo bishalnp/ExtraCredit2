@@ -17,7 +17,7 @@
 		<td>${movie.year}</td>
 		<td>${movie.rating}</td>
 		<td>${movie.genre}</td>
-		<td><a href="books/${movie.id}">edit</a></td>
+		<td><a href="movies/${movie.id}">edit</a></td>
 	</tr>
 	</c:forEach>
 	</table>
